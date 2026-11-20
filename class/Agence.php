@@ -1,9 +1,9 @@
 <?php
 
-require_once "./Vehicule.php";
-require_once "./Entretenable.php";
-require_once "./Client.php";
-require_once "./Location.php";
+require_once __DIR__ . "/./Vehicule.php";
+require_once __DIR__ . "/../interface/Entretenable.php";
+require_once __DIR__ . "/./Client.php";
+require_once __DIR__ . "/./Location.php";
 
 class Agence
 {

@@ -1,6 +1,6 @@
 <?php
 
-require_once "./Vehicule.php";
+require_once __DIR__ . "/Vehicule.php";
 
 final class VeloElectrique extends Vehicule
 {
@@ -12,10 +12,10 @@ final class VeloElectrique extends Vehicule
         private int $autonomie,
         bool $disponibilte = true
     ){
-        parent :: ___construct($immatriculation, $marque, $modele, $tarifJournalier, $disponible);
+        parent::__construct($immatricultation, $marque, $modele, $tarifParJour, $disponibilte);
     }
 
-    public function calculerPrixHT(int $jours): float
+    public function calculerPrixHT(int $jour): float
     {
         $prix = $jour * $this->tarifJournalier;
 

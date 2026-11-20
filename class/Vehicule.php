@@ -1,8 +1,8 @@
 <?php
 
-require_once "../Trait/HistoriqueTrait.php";
+require_once __DIR__ . "/../trait/HistoriqueTrait.php";
 
-abstract class Vehicule  {
+abstract class Vehicule {
     use HistoriqueTrait;
 
     // ABSTRACT

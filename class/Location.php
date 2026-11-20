@@ -15,9 +15,11 @@ class Location {
         Vehicule $vehicule,
         int $jours,
         float $montantTTC,
-        string $dateDebut = date('d-m-Y')
+        string $dateDebut = ''
     )
     {
+        if ($dateDebut === '') $dateDebut = date('d-m-Y');
+
         $this->client = $client;
         $this->vehicule = $vehicule;
         $this->jours = $jours;
