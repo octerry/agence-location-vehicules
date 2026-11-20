@@ -6,8 +6,7 @@ class Client {
     private string $email; 
     private string | null $telephone;
 
-    public function __construct
-    (
+    public function __construct (
         string $nom,
         string $prenom,
         string $email,
