@@ -9,6 +9,12 @@ class Utilitaire extends Vehicule {
     var float $volume;
     var float $kmDepuisEntretien;
 
+    public function __construct(string $immatriculation, string $marque, string $modele, float $tarifJournalier, bool $disponible = true, float $volume, float $kmDepuisEntretien) {
+        parent::__construct($immatriculation, $marque, $modele, $tarifJournalier, $disponible);
+        $this->volume = $volume;
+        $this->kmDepuisEntretien = $kmDepuisEntretien;
+    }
+
     public function __tostring(): string {
         return parent::__tostring() + '<br><p>volume : ' . $this->volume . '</p>';
     }
