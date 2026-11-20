@@ -32,10 +32,10 @@ abstract class Vehicule {
     }
     function __tostring(): string {
         return 
-            '<h1>' . $this->modele . '</h1><br>'
-            . '<h2>' . $this->marque . '</h2><br>'
-            . '<p>Immatricule : ' . $this->immatriculation . '</p><br>'
-            . '<p>' . ($this->tarifJournalier * self::TVA) . '€ / jour</p><br>'
+            '<h1>' . $this->modele . '</h1>'
+            . '<h2>' . $this->marque . '</h2>'
+            . '<p>Immatricule : ' . $this->immatriculation . '</p>'
+            . '<p>' . ($this->tarifJournalier * self::TVA) . '€ / jour</p>'
             . '<p>' . ($this->disponible ? "disponible" : "indisponible") . '</p>';
     }
 

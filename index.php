@@ -16,7 +16,11 @@ $velo = new VeloElectrique('MN-012-OP', 'Rockrider', 'RG23', 313.3, 12);
 
 echo '<p>4 véhicules créés</p>';
 
+echo '<br>';
 echo $voiture1;
+echo '<br>';
 echo $voiture2;
+echo '<br>';
 echo $utilitaire;
+echo '<br>';
 echo $velo;
