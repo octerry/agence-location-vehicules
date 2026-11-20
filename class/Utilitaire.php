@@ -16,7 +16,7 @@ class Utilitaire extends Vehicule {
     }
 
     public function __tostring(): string {
-        return parent::__tostring() . '<br><p>volume : ' . $this->volume . '</p>';
+        return parent::__tostring() . '<p>volume : ' . $this->volume . ' mètres cubes</p>';
     }
 
     public function calculerPrixHT(int $jours): float {
