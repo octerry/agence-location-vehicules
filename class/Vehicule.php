@@ -5,6 +5,9 @@ require_once "../Trait/HistoriqueTrait.php";
 abstract class Vehicule  {
     use HistoriqueTrait;
 
+    // ABSTRACT
+    abstract public function calculerPrixHT(int $jours): float;
+
     private const float TVA = 1.20;
     protected int $nbVehicules;
 
@@ -35,9 +38,6 @@ abstract class Vehicule  {
             . '<p>' . ($this->tarifJournalier * self::TVA) . '€ / jour</p><br>'
             . '<p>' . ($this->disponible ? "disponible" : "indisponible") . '</p>';
     }
-
-    // ABSTRACT
-    abstract public function calculerPrixHT(int $jours): float;
 
     // GET
     public function getNbVehicules():int {
